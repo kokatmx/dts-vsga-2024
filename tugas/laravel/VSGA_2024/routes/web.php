@@ -67,3 +67,8 @@ Route::get('/tabel-dosen', [PengajarController::class, 'tabelPengajar']);
 Route::get('/blog-dosen', [PengajarController::class, 'blogPengajar']);
 
 Route::get('pasarBuah', [PageControllerSatu::class, 'satu']);
+
+Route::resource('/crud', [CRUDController::class, 'index']);
+
+Route::resource('/photos', [PhotoController::class])->only('index', 'show');
+Route::resource('/photos', [PhotoController::class])->except('create', 'store', 'update', 'destroy');
