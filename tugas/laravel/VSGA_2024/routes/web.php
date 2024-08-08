@@ -55,3 +55,7 @@ Route::prefix('admin')->group(function () {
         return '<h1>ini halaman jurusan</h1>';
     });
 });
+
+Route::fallback(function () {
+    return '<h1>404</h1>' . 'Halaman tidak ditemukan';
+});
