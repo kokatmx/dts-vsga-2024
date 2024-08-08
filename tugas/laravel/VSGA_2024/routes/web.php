@@ -29,6 +29,6 @@ Route::get('/about', function () {
 Route::get('/user/{name?}', function ($name = null) {
     return '<h2>Hello, nama saya adalah ' . $name . '</h2>';
 });
-Route::get('/posts/{post}/{comment}', function ($post, $comment) {
+Route::get('/posts/{post?}/{comment?}', function ($post = 1, $comment = "dua") {
     return '<h2>Post ke: ' . $post . '</h2>' . '<h2>Komentar ke: ' . $comment  . '</h2>';
 });
