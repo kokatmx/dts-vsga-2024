@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CRUDController;
+use App\Http\Controllers\HalloController;
 use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\PageControllerSatu;
@@ -81,3 +82,5 @@ Route::get('selamat', function () {
 });
 
 Route::get('/greeting', [WelcomeController::class, 'greeting']);
+
+Route::get('helloow', [HalloController::class, 'greeting']);
