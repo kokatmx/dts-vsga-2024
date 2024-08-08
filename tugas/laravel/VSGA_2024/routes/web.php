@@ -26,3 +26,6 @@ Route::get('/world', function () {
 Route::get('/about', function () {
     return '<h1>NIM: 2231740034</h1>';
 });
+Route::get('/user/{name}', function ($name) {
+    return '<h2>Hello, nama saya adalah ' . $name . '</h2>';
+});
