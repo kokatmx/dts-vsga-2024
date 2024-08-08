@@ -43,3 +43,15 @@ Route::get('pesandisini', function () {
     return '<h1>Pesan disini</h1>';
 });
 Route::redirect('/contact-us', '/pesandisini');
+
+Route::prefix('admin')->group(function () {
+    Route::get('/dosen', function () {
+        return '<h1>ini halaman dosen</h1>';
+    });
+    Route::get('/tendik', function () {
+        return '<h1>ini halaman tendik</h1>';
+    });
+    Route::get('/jurusan', function () {
+        return '<h1>ini halaman jurusan</h1>';
+    });
+});
