@@ -38,3 +38,8 @@ Route::get('/kodebarang/{jenis?}/{merek?}', function ($jk = 'k01', $mrk = 'nokia
 Route::get('/posts/{post?}/{comment?}', function ($post = 1, $comment = "dua") {
     return '<h2>Post ke: ' . $post . '</h2>' . '<h2>Komentar ke: ' . $comment  . '</h2>';
 });
+
+Route::get('pesandisini', function () {
+    return '<h1>Pesan disini</h1>';
+});
+Route::redirect('/contact-us', '/pesandisini');
