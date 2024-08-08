@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'selamat datang';
 });
 
 Route::get('/hello', function () {
@@ -22,4 +22,7 @@ Route::get('/hello', function () {
 });
 Route::get('/world', function () {
     return '<h1>hello world</h1>';
+});
+Route::get('/about', function () {
+    return '<h1>NIM: 2231740034</h1>';
 });
