@@ -26,8 +26,8 @@ Route::get('/world', function () {
 Route::get('/about', function () {
     return '<h1>NIM: 2231740034</h1>';
 });
-Route::get('/user/{name?}', function ($name = null) {
-    return '<h2>Hello, nama saya adalah ' . $name . '</h2>';
+Route::get('/kodebarang/{jenis?}/{merek?}', function ($jk = 'k01', $mrk = 'nokia') {
+    return '<h2>Kode barang : ' . $jk . ' dan nama merek : ' . $mrk . '</h2>';
 });
 Route::get('/posts/{post?}/{comment?}', function ($post = 1, $comment = "dua") {
     return '<h2>Post ke: ' . $post . '</h2>' . '<h2>Komentar ke: ' . $comment  . '</h2>';
