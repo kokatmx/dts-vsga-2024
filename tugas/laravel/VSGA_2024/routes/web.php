@@ -1,8 +1,11 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CRUDController;
+use App\Http\Controllers\PhotoController;
+use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\PageControllerSatu;
 use App\Http\Controllers\PengajarController;
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -76,3 +79,5 @@ Route::get('pasarBuah', [PageControllerSatu::class, 'satu']);
 Route::get('selamat', function () {
     return view('hello', ['name' => 'dino']);
 });
+
+Route::get('/greeting', [WelcomeController::class, 'greeting']);
