@@ -18,5 +18,8 @@ Route::get('/', function () {
 });
 
 Route::get('/hello', function () {
+    return '<h1>hello VSGA</h1>';
+});
+Route::get('/world', function () {
     return '<h1>hello world</h1>';
 });
