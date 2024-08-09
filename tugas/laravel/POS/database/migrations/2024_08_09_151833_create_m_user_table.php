@@ -16,7 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger('level_id')->index();    // indexing untuk FK
             $table->string('username', 20)->unique(); // unique username
             $table->string('nama', 100);
-            $table->string('password');
+            $table->string('password', 255);
             $table->timestamps();
 
             // membuat FK
