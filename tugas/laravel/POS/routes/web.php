@@ -19,4 +19,6 @@ Route::get('/', function () {
 });
 
 Route::get('/level', [LevelController::class, 'index']);
-Route::get('/ledis', [LevelController::class, 'display']);
+Route::get('/update', [LevelController::class, 'update']);
+Route::get('/display', [LevelController::class, 'display']);
+Route::get('/delete', [LevelController::class, 'delete']);
