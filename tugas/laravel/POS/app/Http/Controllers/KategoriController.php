@@ -23,4 +23,10 @@ class KategoriController extends Controller
         DB::table('m_kategori')->where('kategori_kode', 'KTG006')->delete();
         return 'berhasil di delete';
     }
+
+    public function show()
+    {
+        $data = DB::table('m_kategori')->get();
+        return view('kategori', ['data' => $data]);
+    }
 }

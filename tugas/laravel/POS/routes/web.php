@@ -26,3 +26,4 @@ Route::get('/delete', [LevelController::class, 'delete']);
 Route::get('/kat_insert', [KategoriController::class, 'store']);
 Route::get('/kat_update', [KategoriController::class, 'update']);
 Route::get('/kat_delete', [KategoriController::class, 'delete']);
+Route::get('/kat_show', [KategoriController::class, 'show']);
