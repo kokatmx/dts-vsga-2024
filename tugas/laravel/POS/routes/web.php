@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\KategoriController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LevelController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\LevelController;
+use App\Http\Controllers\AnggotaController;
+use App\Http\Controllers\KategoriController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,3 +35,11 @@ Route::get('/user_insert', [UserController::class, 'store']);
 Route::get('/user_update', [UserController::class, 'update']);
 Route::get('/user_delete', [UserController::class, 'delete']);
 Route::get('/user', [UserController::class, 'index']);
+
+Route::get('/cekobject', [AnggotaController::class, 'cekObject']);
+Route::get('/insert', [AnggotaController::class, 'insert']);
+Route::get('/update', [AnggotaController::class, 'update']);
+Route::get('/delete', [AnggotaController::class, 'delete']);
+Route::get('/all', [AnggotaController::class, 'all']);
+Route::get('/find', [AnggotaController::class, 'find']);
+Route::get('/getWhere', [AnggotaController::class, 'getWhere']);
