@@ -6,6 +6,8 @@
             <th>Username</th>
             <th>Nama</th>
             <th>ID Level User</th>
+            <th>Kode Level</th>
+            <th>Nama Level</th>
         </tr>
         @foreach ($data as $item)
             <tr>
@@ -13,6 +15,8 @@
                 <td>{{ $item->username }}</td>
                 <td>{{ $item->nama }}</td>
                 <td>{{ $item->level_id }}</td>
+                <td>{{ $item->level->level_kode }}</td>
+                <td>{{ $item->level->level_nama }}</td>
             </tr>
         @endforeach
     </table>
