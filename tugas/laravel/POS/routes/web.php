@@ -3,6 +3,7 @@
 use App\Http\Controllers\KategoriController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LevelController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,7 +24,13 @@ Route::get('/level', [LevelController::class, 'index']);
 Route::get('/update', [LevelController::class, 'update']);
 Route::get('/display', [LevelController::class, 'display']);
 Route::get('/delete', [LevelController::class, 'delete']);
+
 Route::get('/kat_insert', [KategoriController::class, 'store']);
 Route::get('/kat_update', [KategoriController::class, 'update']);
 Route::get('/kat_delete', [KategoriController::class, 'delete']);
 Route::get('/kat_show', [KategoriController::class, 'show']);
+
+Route::get('/user_insert', [UserController::class, 'store']);
+Route::get('/user_update', [UserController::class, 'update']);
+Route::get('/user_delete', [UserController::class, 'delete']);
+Route::get('/user', [UserController::class, 'index']);
