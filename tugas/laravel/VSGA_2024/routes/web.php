@@ -1,12 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CRUDController;
-use App\Http\Controllers\HalloController;
-use App\Http\Controllers\PhotoController;
-use App\Http\Controllers\WelcomeController;
-use App\Http\Controllers\PageControllerSatu;
-use App\Http\Controllers\PengajarController;
+use App\Http\Controllers\UserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,5 +16,18 @@ use App\Http\Controllers\PengajarController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home', ["title" => "Home"]);
 });
+Route::get('/galeri', function () {
+    return view('galeri', ["title" => "Galeri"]);
+});
+// Route::get('/profil', function () {
+//     return view('profil', [UserController::class, 'index'], ["title" => "Profil"]);
+// });
+Route::get('/kontak', function () {
+    return view('kontak', ["title" => "Kontak"]);
+});
+
+
+Route::get('profil', [UserController::class, 'index']);
+Route::get('profil/data', [UserController::class, 'getUsers'])->name('profil.data');
