@@ -28,15 +28,15 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::get('/profil/data', [UserController::class, 'getUsers'])->name('profil.data');
-    Route::get('/profil', [UserController::class, 'index']);
+    Route::get('/profil', [UserController::class, 'index'])->name('profil');
     Route::get('/home', function () {
-        return view('home');
+        return view('home', ['title' => 'Home']);
     })->name('home');
     Route::get('/galeri', function () {
-        return view('galeri');
+        return view('galeri', ['title' => 'Galeri']);
     })->name('galeri');
     Route::get('/kontak', function () {
-        return view('kontak');
+        return view('kontak', ['title' => 'Kontak']);
     })->name('kontak');
 });
 
@@ -44,12 +44,12 @@ require __DIR__ . '/auth.php';
 
 // todo:punya ku
 
-Route::get('/home', function () {
-    return view('home');
-})->name('home');
-Route::get('/galeri', function () {
-    return view('galeri');
-});
-Route::get('/kontak', function () {
-    return view('kontak');
-});
+// Route::get('/home', function () {
+//     return view('home');
+// })->name('home');
+// Route::get('/galeri', function () {
+//     return view('galeri');
+// })->name('galeri');
+// Route::get('/kontak', function () {
+//     return view('kontak');
+// })->name('kontak');

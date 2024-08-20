@@ -1,5 +1,4 @@
 <x-layout>
-    {{-- <x-header:title>{{ $title }}</x-header:title> --}}
-
+    <x-slot:title>{{ $title }}</x-slot:title>
     <h1>Halaman Galeri</h1>
 </x-layout>

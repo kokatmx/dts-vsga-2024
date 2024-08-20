@@ -1,4 +1,4 @@
 <x-layout>
-    {{-- <x-header>{{ $title }}</x-header> --}}
+    <x-slot:title>{{ $title }}</x-slot:title>
     <h1>Halaman Kontak</h1>
 </x-layout>
