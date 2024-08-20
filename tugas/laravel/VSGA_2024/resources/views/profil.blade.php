@@ -1,8 +1,9 @@
 <x-layout>
     <x-slot:title>{{ $title }}</x-slot:title>
+
     <div class="container mx-auto py-8">
         <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Laravel DataTables</h2>
-        <div class="shadow-lg rounded-lg border border-gray-200 p-6">
+        <div class="shadow-lg rounded-lg border border-gray-200 p-5">
             <table id="users-table" class="table w-full text-center">
                 <thead class="bg-gray-100 text-gray-600 uppercase text-sm">
                     <tr>
@@ -13,9 +14,25 @@
                         <th class="py-3 px-4">Updated At</th>
                     </tr>
                 </thead>
+                <tbody class="bg-white text-gray-800">
+                    <!-- DataTable rows will be inserted here -->
+                </tbody>
             </table>
         </div>
     </div>
+
+    <style>
+        /* Custom styles for table rows */
+        #users-table tbody tr {
+            border-bottom: 1px solid #e5e7eb;
+            /* Tailwind's gray-200 */
+        }
+
+        #users-table tbody tr:hover {
+            background-color: #f3f4f6;
+            /* Tailwind's gray-100 */
+        }
+    </style>
 
     <script type="text/javascript">
         $(document).ready(function() {
