@@ -21,13 +21,10 @@ Route::get('/', function () {
 Route::get('/galeri', function () {
     return view('galeri', ["title" => "Galeri"]);
 });
-// Route::get('/profil', function () {
-//     return view('profil', [UserController::class, 'index'], ["title" => "Profil"]);
-// });
+
 Route::get('/kontak', function () {
     return view('kontak', ["title" => "Kontak"]);
 });
-
 
 Route::get('profil', [UserController::class, 'index']);
 Route::get('profil/data', [UserController::class, 'getUsers'])->name('profil.data');

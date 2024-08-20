@@ -1,6 +1,4 @@
 <x-layout>
-    <x-slot:title>{{ $title }}</x-slot:title>
-
     <div class="container">
         <h2>Laravel DataTables</h2>
         <table id="users-table" class="display">

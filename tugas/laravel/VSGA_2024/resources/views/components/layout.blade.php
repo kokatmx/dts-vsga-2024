@@ -21,15 +21,16 @@
 <body class="h-full">
     <div class="min-h-full">
         <x-navbar />
-        <x-header></x-header>
+        <x-header>
+        </x-header>
         <main>
             <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-                {{-- <div class="avatar">
+                <div class="avatar">
                     <div class="w-24 rounded-full">
                         <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-                    </div> --}}
-                <h2>{{ $slot }}</h2>
-            </div>
+                    </div>
+                </div>
+                {{ $slot }}
         </main>
     </div>
 </body>
