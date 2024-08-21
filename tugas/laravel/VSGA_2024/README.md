@@ -19,15 +19,34 @@ Tanggal Pelaksanaan	: 20 Agustus 2024
 <div>
 <div>
     <h2>Tugas 1</h2>
-    <p>Praktikum 1</p>
+    <p>Praktikum 1-Implementasi Authentication</p>
     <div>
-        <img src="![image](https://github.com/user-attachments/assets/d42fe4ca-1b4c-4e4c-9faa-ca2a121ac47f)">
-        Praktikum 1 -Impelentasi Authentication
-1.	Kita buat project baru dengan mengetik perintah berikut pada Terminal atau CMD 
-        <img src="![image](https://github.com/user-attachments/assets/3f742ec8-af25-409f-a790-452640d3bafb)">
-2.	Kemudian kita modifikasi file .env agar dapat terkoneksi dengan SQLite seperti berikut. 
- 
+        <ul>
+            <li>
+       <p>    
+       1.	Kita buat project baru dengan mengetik perintah berikut pada Terminal atau CMD 
+       </p>
+        <img src="https://github.com/kokatmx/dts-vsga-2024/blob/master/tugas/laravel/VSGA_2024/laporan/image1.png">
+            </li>
+            <li>
+                <p>
+        2.	Kemudian kita modifikasi file .env agar dapat terkoneksi dengan SQLite seperti berikut. 
+                </p>
+        <img src="https://github.com/kokatmx/dts-vsga-2024/blob/master/tugas/laravel/VSGA_2024/laporan/image2.png">
+            </li>
+            <li>
+                <p>
 3.	Setelah selesai, selanjutnya kita lakukan migrate dengan perintah berikut
+                </p>
+        <img src="https://github.com/kokatmx/dts-vsga-2024/blob/master/tugas/laravel/VSGA_2024/laporan/image3.png">
+            </li>
+            <li>
+                <p>
+
+                </p>
+        <img src="https://github.com/kokatmx/dts-vsga-2024/blob/master/tugas/laravel/VSGA_2024/laporan/image3.png">
+            </li>
+        </ul>
  
 4.	Sekarang kita unduh starter kit breeze dengan composer melalui perintah berikut
  
