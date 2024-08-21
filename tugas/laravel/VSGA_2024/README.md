@@ -42,15 +42,31 @@ Tanggal Pelaksanaan	: 20 Agustus 2024
             </li>
             <li>
                 <p>
-
+                    4.	Sekarang kita unduh starter kit breeze dengan composer melalui perintah berikut
                 </p>
-        <img src="https://github.com/kokatmx/dts-vsga-2024/blob/master/tugas/laravel/VSGA_2024/laporan/image3.png">
+                    <img src="https://github.com/kokatmx/dts-vsga-2024/blob/master/tugas/laravel/VSGA_2024/laporan/image4.png">
+            </li>
+            <li>
+                <p>
+5.	Kemudian install dengan perintah artisan berikut
+                </p>
+                    <img src="https://github.com/kokatmx/dts-vsga-2024/blob/master/tugas/laravel/VSGA_2024/laporan/image5.png">
+                <p>Proses installasi seperti berikut</p>
+                    <img src="https://github.com/kokatmx/dts-vsga-2024/blob/master/tugas/laravel/VSGA_2024/laporan/image6.png">
+            </li>
+            <li>
+                <p>
+6.	Selanjutnya jalankan perintah berikut
+                </p>
+                    <img src="https://github.com/kokatmx/dts-vsga-2024/blob/master/tugas/laravel/VSGA_2024/laporan/image7.png">
+            </li>
+            <li>
+                <p>
+7.	Selanjutnya, kita run dengan perintah php artisan serve lalu hasilnya seperti gambar berikut. Perhatikan di pojok kanan atas, terdapat menu untuk Log in dan Register      
+                </p>
+                    <img src="https://github.com/kokatmx/dts-vsga-2024/blob/master/tugas/laravel/VSGA_2024/laporan/image8.png">
+                    <img src="https://github.com/kokatmx/dts-vsga-2024/blob/master/tugas/laravel/VSGA_2024/laporan/image9.png">
             </li>
         </ul>
- 
-4.	Sekarang kita unduh starter kit breeze dengan composer melalui perintah berikut
- 
-5.	Kemudian install dengan perintah artisan berikut
-
     </div>
 </div>
