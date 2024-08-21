@@ -19,7 +19,7 @@ Tanggal Pelaksanaan	: 20 Agustus 2024
 <div>
 <div>
     <h2>Tugas 1</h2>
-    <p>Praktikum 1-Implementasi Authentication</p>
+    <p>Praktikum 3</p>
     <div>
         <ul>
             <li>
@@ -66,6 +66,13 @@ Tanggal Pelaksanaan	: 20 Agustus 2024
                 </p>
                     <img src="https://github.com/kokatmx/dts-vsga-2024/blob/master/tugas/laravel/VSGA_2024/laporan/image8.png">
                     <img src="https://github.com/kokatmx/dts-vsga-2024/blob/master/tugas/laravel/VSGA_2024/laporan/image9.png">
+            </li>
+            <li>
+                <p>Screenshoot dari Projectnya</p>
+                    <img src="https://github.com/kokatmx/dts-vsga-2024/blob/master/tugas/laravel/VSGA_2024/laporan/image10.png">
+                    <img src="https://github.com/kokatmx/dts-vsga-2024/blob/master/tugas/laravel/VSGA_2024/laporan/image11.png">
+                    <img src="https://github.com/kokatmx/dts-vsga-2024/blob/master/tugas/laravel/VSGA_2024/laporan/image12.png">
+                
             </li>
         </ul>
     </div>
