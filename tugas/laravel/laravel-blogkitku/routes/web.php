@@ -1,11 +1,12 @@
 <?php
 
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\CommentController;
-use App\Http\Controllers\ReadmeController;
-use App\Http\Controllers\PostController;
-use Illuminate\Support\Facades\Route;
 use App\Models\Post;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ReadmeController;
+use App\Http\Controllers\CommentController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,4 +41,5 @@ if (config('blog.readme')) {
     Route::get('/readme', ReadmeController::class);
 }
 
-require __DIR__.'/auth.php';
+
+require __DIR__ . '/auth.php';

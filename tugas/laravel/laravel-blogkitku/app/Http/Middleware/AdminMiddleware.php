@@ -5,8 +5,9 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Support\Facades\Auth;
 
-class CheckRole
+class AdminMiddleware
 {
     /**
      * Handle an incoming request.
@@ -17,12 +18,12 @@ class CheckRole
     // {
     //     return $next($request);
     // }
-    public function handle($request, Closure $next, $role)
+    public function handle($request, Closure $next)
     {
-        if (auth()->check() && auth()->user()->role === $role) {
+        if (Auth::check() && Auth::user()->role === 'admin') {
             return $next($request);
         }
 
-        return redirect('/');
+        return redirect('/')->with('error', 'You do not have permission to access this resource.');
     }
 }
