@@ -72,7 +72,6 @@ Tanggal Pelaksanaan	: 20 Agustus 2024
                     <img src="https://github.com/kokatmx/dts-vsga-2024/blob/master/tugas/laravel/VSGA_2024/laporan/image10.png">
                     <img src="https://github.com/kokatmx/dts-vsga-2024/blob/master/tugas/laravel/VSGA_2024/laporan/image11.png">
                     <img src="https://github.com/kokatmx/dts-vsga-2024/blob/master/tugas/laravel/VSGA_2024/laporan/image12.png">
-                
             </li>
         </ul>
     </div>
