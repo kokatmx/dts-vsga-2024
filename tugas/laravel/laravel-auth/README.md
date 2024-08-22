@@ -1,66 +1,58 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+**LAPORAN TUGAS DTS VSGA 2024**
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Laravel Upload Files and Excel**
 
-## About Laravel
+Disusun Oleh
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Nama : Suko Dwi Atmodjo
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Email : <2231740034@student.polinema.ac.id>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Mitra Pelatihan : Politeknik Negeri Malang
 
-## Learning Laravel
+Tanggal Pelaksanaan : 21 Agustus 2024
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+**Tugas Praktikum 1**
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+1\. Pada project sebelumnya, tambahkan migration articles
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+![](Aspose.Words.1225cf60-cb58-4a48-9341-33f89d80f30f.001.png)
 
-## Laravel Sponsors
+2\. Ubahlah fungsi up() menjadi seperti ini
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+![](Aspose.Words.1225cf60-cb58-4a48-9341-33f89d80f30f.002.png)
 
-### Premium Partners
+3\. Lalu jalankan perintah migrate untuk menambahkan table
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+![](Aspose.Words.1225cf60-cb58-4a48-9341-33f89d80f30f.003.png)
 
-## Contributing
+4\. Selanjutnya yaitu membuat Controller Article dengan atribut resource beserta modelnya
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+![](Aspose.Words.1225cf60-cb58-4a48-9341-33f89d80f30f.004.png)
 
-## Code of Conduct
+5\. Tambahkan fillable pada modelnya
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+![](Aspose.Words.1225cf60-cb58-4a48-9341-33f89d80f30f.005.png)
 
-## Security Vulnerabilities
+6\. Pada routenya tambahkan route untuk mengakses article
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+![](Aspose.Words.1225cf60-cb58-4a48-9341-33f89d80f30f.006.png)
 
-## License
+7\. Buatlah create view folder articles dan tambahkan kode ini
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+| <p><x-app-layout></p><p>`    `<div class="container"></p><p>`        `<form action="/articles" method="post" enctype="multipart/form-data"></p><p>`            `@csrf</p><p>`            `<div class="form-group"></p><p>`                `<label for="title">Title: </label></p><p>`                `<input type="text" class="form-control" required="required" name="title"></br></p><p>`                `<label for="content">Content: </label></p><p>`                `<textarea type="text" class="form-control" required="required" name="content"></textarea></br></p><p>`                `<label for="image">Feature Image: </label></p><p>`                `<input type="file" class="form-control" required="required" name="image"></br></p><p>`                `<button type="submit" name="submit"</p><p>`                    `class="btn btn-primary</p><p>`                `float-right">Simpan</button></p><p>`            `</div></p><p>`        `</form></p><p>`    `</div></p><p></x-app-layout></p> |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+8\. Pada ArticleController modifikasi function store seperti ini
+
+| <p>public function **store**(Request $request)</p><p>`    `{</p><p>`        `if ($request->**file**('image')) {</p><p>`            `$image_name = $request->**file**('image')->**store**('image', 'public');</p><p>`        `}</p><p>`        `Article::**create**([</p><p>`            `'title' => $request->title,</p><p>`            `'content' => $request->content,</p><p>`            `'featured\_image' => $image\_name</p><p>`        `]);</p><p>`        `return "Berhasil di simpan";</p><p>`    `}</p> |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+Dan function index seperti ini
+
+| <p>`    `public function **create**(Request $request)</p><p>`    `{</p><p>`        `return **view**('articles.create');</p><p>`    `}</p> |
+| :---------------------------------------------------------------------------------------------------------------------------------------- |
+
+9\. Lalu gunakan perintah untuk mirroring file
+
+![](Aspose.Words.1225cf60-cb58-4a48-9341-33f89d80f30f.007.png)
