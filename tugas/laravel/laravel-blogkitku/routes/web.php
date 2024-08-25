@@ -1,9 +1,9 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
 use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
-use App\Http\Controllers\UserController;
 use App\Http\Controllers\ReadmeController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\DashboardController;
@@ -40,6 +40,5 @@ Route::get('/dashboard', [DashboardController::class, 'show'])->middleware(['aut
 if (config('blog.readme')) {
     Route::get('/readme', ReadmeController::class);
 }
-
 
 require __DIR__ . '/auth.php';
