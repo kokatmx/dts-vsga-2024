@@ -27,8 +27,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::resource('articles', ArticleController::class)->names('articles');
+    // routes/web.php
+    Route::get('articles', [ArticleController::class, 'index'])->name('articles');
 });
+Route::get('article/cetak_pdf', [ArticleController::class, 'cetakPDF']);
 
-Route::resource('articles', ArticleController::class);
 
 require __DIR__ . '/auth.php';
