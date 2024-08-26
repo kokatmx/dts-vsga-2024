@@ -18,10 +18,13 @@ class UserController extends Controller
         $users = User::with('level')->get();
         return view('user.index', ['users' => $users, 'breadcrumb' => $breadcrumb, 'page' => $page, 'level' => $level, 'activeMenu' => $activeMenu]);
     }
-    public function list()
+    public function list(Request $request)
     {
         $users = User::select('user_id', 'username', 'nama', 'level_id')
             ->with('level');
+        if ($request->level_id) {
+            $users->where('level_id', $request->level_id);
+        }
 
         return DataTables::of($users)
             ->addColumn('level_nama', function ($user) {
