@@ -31,7 +31,7 @@ Route::middleware('auth')->group(function () {
     // routes/web.php
     Route::get('articles', [ArticleController::class, 'index'])->name('articles');
 });
-Route::get('article/cetak_pdf', [ArticleController::class, 'cetakPDF']);
+Route::get('article/cetak-pdf', [ArticleController::class, 'cetak_PDF'])->name('cetak-pdf');
 
 
 require __DIR__ . '/auth.php';

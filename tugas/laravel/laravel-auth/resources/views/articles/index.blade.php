@@ -3,4 +3,5 @@
     <a href="/articles/create">Buat Artikel</a>
     <a href="/articles/edit">Edit Artikel</a>
     <a href="/articles/delete">Edit Artikel</a>
+    <a href="{{ route('cetak-pdf') }}">Cetak Artikel</a>
 </x-app-layout>
