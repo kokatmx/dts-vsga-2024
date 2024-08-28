@@ -11,22 +11,16 @@ class UserController extends Controller
 {
     public function index()
     {
-        // $breadcrumb = (object)['title' => 'Daftar User', 'list' => ['Home', 'User']];
-        // $page = (object)['title' => 'Daftar User yang terdaftar dalam sistem'];
-        // $activeMenu = 'user';
-        // $level = Level::all();
-        // $users = User::with('level')->get();
-        return view('user.index');
-    }
-    public function getUsers()
-    {
-        $users = User::select(['user_id', 'username', 'nama', 'created_at', 'updated_at']);
-        return DataTables::of($users)->make(true);
+        $breadcrumb = (object)['title' => 'Daftar User', 'list' => ['Home', 'User']];
+        $page = (object)['title' => 'Daftar User yang terdaftar dalam sistem'];
+        $activeMenu = 'user';
+        $level = Level::all();
+        $users = User::with('level')->get();
+        return view('user.index', ['breadcrumb' => $breadcrumb, 'users' => $users, 'level' => $level, 'page' => $page, 'activeMenu' => $activeMenu]);
     }
     public function list(Request $request)
     {
-        $users = User::select('user_id', 'username', 'nama', 'level_id')
-            ->with('level');
+        $users = User::select('user_id', 'username', 'nama', 'level_id')->with('level');
         if ($request->level_id) {
             $users->where('level_id', $request->level_id);
         }

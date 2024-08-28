@@ -30,6 +30,6 @@ class DatabaseSeeder extends Seeder
         //     'level_id' => 2,
         //     'level_nama' => 'user',
         // ]);
-        User::factory(48)->create();
+        User::factory(50)->create();
     }
 }

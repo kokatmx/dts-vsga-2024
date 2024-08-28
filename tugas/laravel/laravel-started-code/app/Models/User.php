@@ -17,7 +17,10 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-
+    public function level()
+    {
+        return $this->belongsTo(Level::class, 'level_id');
+    }
     protected $primaryKey = 'user_id';
 
     protected $fillable = [
@@ -27,10 +30,7 @@ class User extends Authenticatable
         'level_id',
     ];
 
-    public function level()
-    {
-        return $this->belongsTo(Level::class, 'level_id');
-    }
+
     /**
      * The attributes that should be hidden for serialization.
      *
